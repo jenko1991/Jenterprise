@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="aboutstyle.css">
+
+    <!--MAPS-->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+
+    <style>
+    
+    #mapid { height: 280px; }
+    
+    </style>
+    <!--MAPS-->
+
+    <title>Review The UK - About</title>
+</head>
+<body>
+
+    <!--NAVBAR-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="landing.html">Review The UK</a>
+        <a class="navbar-brand" href="#">About</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="landing.html" >Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="top.html">Top Reviews This Week</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+            <script>
+                $('.navbar-collapse a').click(function(){
+                    $(".navbar-collapse").collapse('hide');
+                });
+            </script>
+           <!--Search Bar V2-->
+    <!-- input tag -->
+    <input id="searchbar" onkeyup="search_animal()" type="text"
+    name="search" placeholder="Search Site..">
+
+<!-- ordered list -->
+<ol id='list'>
+    <li class="animals">
+        <a class="nav-link" href="top.html">Top Reviews</a>
+    </li> 
+    <li class="animals">
+        <a class="nav-link" href="about.html">About</a>
+    </li>
+    <li class="animals">
+        <a class="nav-link" href="landing.html">Home</a>
+    </li>
+    <li class="animals">Fish</li>
+    <li class="animals">Gorilla</li>
+    <li class="animals">Monkey</li>
+    <li class="animals">Turtle</li>
+    <li class="animals">Whale</li>
+    <li class="animals">Aligator</li>
+    <li class="animals">Donkey</li>
+    <li class="animals">Horse</li>
+</ol>    
+
+<!-- linking javascript -->
+<script src="topjs.js"></script>
+
+<!--Search Bar V2-->
+        </div>
+    </div>
+</nav>
+<!--NAVBAR-->
+    
+
+
+   
+          <h1 class="bd-title" id="content">About</h1>
+        </div>
+        <p class="bd-lead">Learn more about the team maintaining Review the UK, how and why the project started, and how to get involved.</p>
+        <script async="" src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&amp;placement=getbootstrapcom" id="_carbonads_js"></script>
+
+      </div>
+
+      
+
+      <div class="bd-content ps-lg-4">
+        
+
+        <h2 id="team">Team<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#team" style="padding-left: 0.375em;"></a></h2>
+<p>Review the UK is maintained by <a href="#!">Lewis</a>.
+    <p>Please feel free to point out any bugs.</p>
+<h2 id="history">History<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#history" style="padding-left: 0.375em;"></a></h2>
+<p>Review the UK was created at on Twitter in mid-2021 by <a href="#!">@Twitterhandle</a>. 
+<h2 id="get-involved">Get involved<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#get-involved" style="padding-left: 0.375em;"></a></h2>
+<p>Get involved with Review the UK by sending your finds on <a href="#!">Twitter</a> or via email. 
+
+      </div>
+    </main>
+  </div>
+<br>
+
+<!--MAPS-->
+<div id="mapid"></div>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+<script>
+
+var mymap = L.map('mapid').setView([53.5800, -0.6500], 13);
+
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap);
+
+
+</script>
+<!--MAPS-->
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+               ><i class="fa fa-facebook-f"></i
+              ></a>
+    
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+               ><i class="fa fa-twitter"></i
+              ></a>
+    
+            <!-- Google -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+               ><i class="fa fa-google"></i
+              ></a>
+    
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+               ><i class="fa fa-instagram"></i
+              ></a>
+    
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+               ><i class="fa fa-github"></i
+              ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="text-white" href="#!">Jenterprise</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      
+
+<!--Bootstrapper Java Needed for all bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<!--Bootstrapper Java Needed for all bootstrap-->
+</body>
+</html>
